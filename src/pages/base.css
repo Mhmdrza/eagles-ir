@@ -13,3 +13,11 @@ a {
 a::after {
     content: '‌';
 }
+
+h1, h2, h3 {
+    min-height: 50px;
+}
+
+* {
+    line-height: 1.5;
+}

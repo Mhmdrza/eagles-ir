@@ -1,23 +1,20 @@
-const React = require('react');
+import React from 'react'
 
-exports.onRenderBody = ({ setHtmlAttributes }) => {
+export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
     setHtmlAttributes({ lang: "fa" })
-}
-
-exports.onRenderBody = ({ setHeadComponents }) => {
     setHeadComponents([
         <link
             rel="preload"
             as="font"
             type="font/woff2"
-            href="https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2"
-            crossorigin
+            href="/fa-Iran-sans-web-bold.woff2"
+            crossorigin="anonymous"
         />,
         <link
             rel="preload"
             as="font"
             type="font/woff2"
-            href="https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2"
+            href="/fa-Iran-sans-web-light.woff2"
             crossorigin="anonymous"
         />,
         React.createElement("link", {

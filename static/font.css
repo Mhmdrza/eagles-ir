@@ -2,7 +2,7 @@
 font-family: IRANSansMobile-fa;
 font-style: normal;
 font-weight: bold;
-src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2') format('woff2');
+src: url('/fa-Iran-sans-web-bold.woff2') format('woff2');
 font-display: fallback;
 }
 
@@ -10,6 +10,6 @@ font-display: fallback;
 font-family: IRANSansMobile-fa;
 font-style: normal;
 font-weight: 300;
-src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2') format('woff2');
+src: url('/fa-Iran-sans-web-light.woff2') format('woff2');
 font-display: fallback;
 }

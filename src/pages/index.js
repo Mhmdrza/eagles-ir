@@ -32,8 +32,6 @@ export default function Home() {
     </ul>
     <blockquote>
       <a class="btn" href="/story">ارسال داستان</a>
-
-
       <a class="btn" href="/support">حمایت مالی</a>
     </blockquote>
   </div>
