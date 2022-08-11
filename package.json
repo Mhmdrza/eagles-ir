@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-preact-blog",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
@@ -17,7 +17,9 @@
     "gatsby": "^4.20.0",
     "gatsby-plugin-preact": "^6.20.0",
     "preact": "^10.10.2",
-    "preact-render-to-string": "^5.2.1"
+    "preact-render-to-string": "^5.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
