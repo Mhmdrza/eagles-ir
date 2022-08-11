@@ -22,14 +22,14 @@ exports.onRenderBody = ({ setHeadComponents }) => {
         />,
         React.createElement("link", {
             rel: "preload",
-            href: "https://web-cdn.snapp.ir/snapp-website/css/fonts.css",
+            href: "/font.css",
             as: "style",
             onLoad: "this.media='all';this.rel='stylesheet';this.onload=null;"
         }),
         <noscript>
             <link
                 rel="stylesheet"
-                href="https://web-cdn.snapp.ir/snapp-website/css/fonts.css"
+                href="/font.css"
             />
         </noscript>
     ]);
