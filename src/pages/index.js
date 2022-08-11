@@ -1,4 +1,5 @@
 import React from "react"
+import './base.css'
 
 export default function Home() {
   return <div>
@@ -36,4 +37,47 @@ export default function Home() {
       <a class="btn" href="/support">حمایت مالی</a>
     </blockquote>
   </div>
+}
+
+
+export function Head() {
+  return (
+    <>
+      <title>کلاهبان</title>
+      <meta name="description" content="آموزش مقابله با کلاهبرداری" />
+      <link 
+      rel="preload" 
+      as="font" 
+      type="font/woff2" 
+      href="https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2" 
+      crossorigin 
+    />
+    <link 
+      rel="preload" 
+      as="font" 
+      type="font/woff2" 
+      href="https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2" 
+      crossorigin="anonymous"
+    />
+    {/* <link 
+      rel="preload"
+      as="style"
+      href="https://web-cdn.snapp.ir/snapp-website/css/fonts.css" 
+    /> */}
+    <script>{`
+      const preloadLink = document.createElement('link');
+      preloadLink.href = 'https://web-cdn.snapp.ir/snapp-website/css/fonts.css';
+      preloadLink.rel = 'preload';
+      preloadLink.as = 'style';
+      preloadLink.setAttribute('onload', "this.media = 'all'; this.rel='stylesheet'");
+      document.head.appendChild(preloadLink);
+    `}</script>
+    <noscript>
+      <link 
+        rel="stylesheet"
+        href="https://web-cdn.snapp.ir/snapp-website/css/fonts.css" 
+      />
+    </noscript>
+    </>
+  )
 }
