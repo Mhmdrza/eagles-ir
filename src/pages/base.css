@@ -7,4 +7,9 @@ body {
 
 a {
     text-decoration: none;
+    margin: 24px 8px;
+    font-size: 1.3rem;
+}
+a::after {
+    content: '‌';
 }
