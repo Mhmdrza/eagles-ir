@@ -20,13 +20,12 @@ exports.onRenderBody = ({ setHeadComponents }) => {
             href="https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2"
             crossorigin="anonymous"
         />,
-        <link
-            id='fnt'
-            rel="preload"
-            as="style"
-            href="https://web-cdn.snapp.ir/snapp-website/css/fonts.css"
-        />,
-        <script id='scf'>{`setTimeout(function(){fnt.setAttribute('onload','fnt.media=\\'all\\';fnt.rel=\\'stylesheet\\';fnt.removeAttribute(\\'onload\\')');scf.remove()},0)`}</script>,
+        React.createElement("link", {
+            rel: "preload",
+            href: "https://web-cdn.snapp.ir/snapp-website/css/fonts.css",
+            as: "style",
+            onLoad: "this.media='all';this.rel='stylesheet';this.onload=null;"
+        }),
         <noscript>
             <link
                 rel="stylesheet"
