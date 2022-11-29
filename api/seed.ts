@@ -1,5 +1,5 @@
 import { VercelResponse, VercelRequest } from '@vercel/node';
-import { executeQuery, q } from "../db/fauna";
+import { executeQuery, q } from "../src/db/fauna";
 
 export const NewLetterCollection = "Newsletter";
 

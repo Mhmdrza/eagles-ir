@@ -1,5 +1,5 @@
 import { NewLetterCollection } from './seed';
-import { executeQuery, q } from './../db/fauna';
+import { executeQuery, q } from '../src/db/fauna';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 
