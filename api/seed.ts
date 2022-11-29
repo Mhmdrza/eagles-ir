@@ -2,11 +2,14 @@ import { VercelResponse, VercelRequest } from '@vercel/node';
 import { executeQuery, q } from "../src/db/fauna";
 
 export const NewLetterCollection = "Newsletter";
+export const Email_NewsLetter_ = `-email@${NewLetterCollection}`;
+export const _NewsLetter_ = `@${NewLetterCollection}`;
+
 
 const documents = [NewLetterCollection];
 const indexObjects = [
   {
-    name: `-email@${NewLetterCollection}`,
+    name: Email_NewsLetter_,
     source: NewLetterCollection,
     unique: true,
     serialized: true,
@@ -18,7 +21,7 @@ const indexObjects = [
     values: {},
   },
   {
-    name: `@${NewLetterCollection}`,
+    name: _NewsLetter_,
     source: NewLetterCollection,
     unique: false,
     serialized: true,

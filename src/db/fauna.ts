@@ -1,3 +1,4 @@
+import { FaunaSuccessResponse } from './models';
 import faunadb, { Expr } from "faunadb";
 export const q = faunadb.query;
 
@@ -20,6 +21,6 @@ export const client = new faunadb.Client({
   timeout: 3000,
 });
 
-export const executeQuery = async (command: Expr): Promise<Object> => {
+export const executeQuery = async function (command: Expr): Promise<FaunaSuccessResponse> {
   return client.query(command);
 }
