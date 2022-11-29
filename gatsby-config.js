@@ -22,4 +22,8 @@ module.exports = {
       },
     },
   ].filter(Boolean),
+  flags: {
+    DEV_SSR: true,
+    PARTIAL_HYDRATION: true,
+  },
 }

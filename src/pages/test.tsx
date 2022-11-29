@@ -2,12 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import '../styles/base.css'
 
-export default function Index() {
-  return <Layout>
-    <h1 className="m-0">SSR</h1>
-    test
+const SSRPage = ({ serverData }) => (
+  <Layout>
+    <h1>SSR Page with Dogs</h1>
+    <img alt="Happy dog" src={serverData.message} />
   </Layout>
-}
+)
+
+export default SSRPage
 
 
 export function Head() {
@@ -19,11 +21,22 @@ export function Head() {
   )
 }
 
-export async function getServerData(context) {
-  console.log(context)
-  return {
-    status: 200, // The HTTP status code that should be returned
-    props: {}, // Will be passed to the page component as "serverData" prop
-    headers: {}, // HTTP response headers for this page
+export async function getServerData() {
+  try {
+    const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
+
+    if (!res.ok) {
+      throw new Error(`Response failed`)
+    }
+
+    return {
+      props: await res.json(),
+    }
+  } catch (error) {
+    return {
+      status: 500,
+      headers: {},
+      props: {}
+    }
   }
 }
