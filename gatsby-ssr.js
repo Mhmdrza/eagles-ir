@@ -9,6 +9,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
             type="font/woff2"
             href="/fa-Iran-sans-web-bold.woff2"
             crossOrigin="anonymous"
+            key='11'
         />,
         <link
             rel="preload"
@@ -16,6 +17,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
             type="font/woff2"
             href="/fa-Iran-sans-web-light.woff2"
             crossOrigin="anonymous"
+            key='22'
         />
     ]);
 };
