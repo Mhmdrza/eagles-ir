@@ -3,8 +3,8 @@ import '../styles/base.css'
 
 export default function Index() {
   return <div>
-    <h1 className="m-2">کلاهبان</h1>
-    <p className="p-5">چه کلاه شما رو بردارن، چه کلاه بذارن سرتون، شما متضرر شدی. یکی باید حواسش وضعیت کلاه شما باشه</p>
+    <h1 className="m-2">عقاب‌ها</h1>
+    <p className="p-5"></p>
     <h2 className="p-4 m-5">دنبال چی هستیم؟</h2>
     <ul>
       <li>بالا بردن آگاهی عمومی</li>
@@ -41,7 +41,7 @@ export default function Index() {
 export function Head() {
   return (
     <>
-      <title>کلاهبان</title>
+      <title>عقاب‌ها</title>
       <meta name="description" content="آموزش مقابله با کلاهبرداری" />
     </>
   )
