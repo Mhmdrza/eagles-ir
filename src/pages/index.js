@@ -1,11 +1,11 @@
 import React from "react"
-import './base.css'
+import '../styles/base.css'
 
-export default function Home() {
+export default function Index() {
   return <div>
-    <h1>کلاهبان</h1>
-    <p>چه کلاه شما رو بردارن، چه کلاه بذارن سرتون، شما متضرر شدی. یکی باید حواسش وضعیت کلاه شما باشه</p>
-    <h2>دنبال چی هستیم؟</h2>
+    <h1 className="m-1">کلاهبان</h1>
+    <p className="p-5">چه کلاه شما رو بردارن، چه کلاه بذارن سرتون، شما متضرر شدی. یکی باید حواسش وضعیت کلاه شما باشه</p>
+    <h2 className="p-4 m-5">دنبال چی هستیم؟</h2>
     <ul>
       <li>بالا بردن آگاهی عمومی</li>
       <li>آموزش روش&zwnj;های مقابله با کلاهبرداری</li>
@@ -31,8 +31,8 @@ export default function Home() {
       <li>پول :)</li>
     </ul>
     <blockquote>
-      <a class="btn" href="/story">ارسال داستان</a>
-      <a class="btn" href="/support">حمایت مالی</a>
+      <a className="btn" href="/story">ارسال داستان</a>
+      <a className="btn" href="/support">حمایت مالی</a>
     </blockquote>
   </div>
 }
