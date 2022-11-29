@@ -6,6 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "vc:dev": "vercel dev -l 4001",
+    "fauna:dev": "docker run --rm --name faunadb -p 8443:8443 fauna/faunadb",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
+    "faunadb": "^4.7.1",
     "gatsby": "^5.2.0",
     "gatsby-plugin-mdx": "^5.2.0",
     "gatsby-plugin-preact": "^7.0.0",

@@ -11,6 +11,7 @@ export default function Index() {
     <h3>پیوستن به ما</h3>
     <form action="/api/newsletter">
       <Input type='email' name='email' />
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">ارسال</button>
     </form>
   </Layout>
 }
