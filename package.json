@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-preact-blog",
+  "name": "eagles.ir",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "vc:dev": "vercel dev -l 4001",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -14,14 +15,20 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@mdx-js/react": "^2.1.5",
     "gatsby": "^5.2.0",
+    "gatsby-plugin-mdx": "^5.2.0",
     "gatsby-plugin-preact": "^7.0.0",
+    "gatsby-source-filesystem": "^5.2.0",
     "preact": "^10.10.2",
     "preact-render-to-string": "^5.2.1",
     "react": "^18.0.2",
     "react-dom": "^18.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "@vercel/node": "^2.6.4",
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.2.0",
     "postcss": "^8.4.19",
